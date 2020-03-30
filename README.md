@@ -85,3 +85,11 @@ These goals are listed in priority order.
 
 ## UML
 ![](./screenshots/uml.png)
+
+## Screenshots
+![](./screenshots/screenshot-dashboard.png)
+![](./screenshots/screenshot-unit-tests.png)
+
+## Salient Features
+* Added Interceptor and Http Loader to show spinner for every http calls
+* Added Pipe to filter order counts in 'XXXX' format

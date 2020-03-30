@@ -12,7 +12,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { By } from '@angular/platform-browser';
 import { PizzaSizeModel } from '../../shared/models/pizza-size.model';
 import { PizzaSize } from '../../shared/enums/pizza-size.enum';
-import { ToastrModule } from 'ngx-toastr';
 
 describe('Pizza Logistics Component', () => {
   let component: PizzaLogisticsComponent;
@@ -31,8 +30,7 @@ describe('Pizza Logistics Component', () => {
         ReactiveFormsModule,
         SharedModule,
         HttpClientTestingModule,
-        BrowserAnimationsModule,
-        ToastrModule
+        BrowserAnimationsModule
       ]
     })
     .compileComponents();
