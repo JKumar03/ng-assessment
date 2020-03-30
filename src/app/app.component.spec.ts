@@ -1,12 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AppComponent } from './app.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-describe('AppComponent', () => {
+import { AppComponent } from './app.component';
+import { PizzaDashboardModule } from './pizza-dashboard/pizza-dashboard.module';
+import { NgHttpLoaderModule } from 'ng-http-loader';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+describe('App Component', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        HttpClientTestingModule,
+        PizzaDashboardModule,
+        NgHttpLoaderModule,
+        BrowserAnimationsModule
       ],
       declarations: [
         AppComponent
@@ -30,6 +39,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('ng-assessment app is running!');
+    expect(compiled.querySelector('app-pizza-dashboard').textContent).toContain('');
   });
 });
