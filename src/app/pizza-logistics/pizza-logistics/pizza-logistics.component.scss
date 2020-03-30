@@ -1,5 +1,49 @@
 :host {
-  .mat-card-title {
-    background: orange;
+  .container {
+    margin:0 0 0 2em;
+    .container-item{
+      margin-bottom: 2em;
+      .cart-container,form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width:100%;
+        .cart-item{
+          flex: 1;
+          margin-right:3em;
+          .mat-form-field{
+            width: 100%;
+          }
+          &:last-child{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+
+    }
+    .open-orders, .ready-orders, .delivered-orders{
+      .cart-container {
+        .cart-item{
+          &:nth-child(2){
+            flex: 2;
+          }
+        }
+      }
+      &:last-child{
+        .cart-container {
+          .cart-item{
+            &:last-child{
+              display: block;
+            }
+            &:nth-child(2){
+              flex: 1;
+            }
+          }
+        }
+      }
+    }
   }
 }

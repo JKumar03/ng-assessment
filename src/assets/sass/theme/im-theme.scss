@@ -39,7 +39,8 @@ $pizza-pie-app-warn:    mat-palette($mat-deep-orange);
           secondary-text:    $dark-secondary-text,
           icon:              rgba(black, 0.54),
           icons:             rgba(black, 0.54),
-          text:              map_get($im-palette-grey, 600),
+          // text:              map_get($im-palette-grey, 600),
+          text:              map_get($im-palette-grey, 700),
           slider-min:        rgba(black, 0.87),
           slider-off:        rgba(black, 0.26),
           slider-off-active: rgba(black, 0.38),
@@ -80,6 +81,7 @@ $pizza-pie-app-warn:    mat-palette($mat-deep-orange);
 
   // Custom components for this app
   @include button-alterations($theme);
+  @include card-alterations($theme);
   @include checkbox-alterations($theme);
   @include select-alterations($theme);
   @include table-alterations($theme);

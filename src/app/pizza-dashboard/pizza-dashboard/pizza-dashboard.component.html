@@ -2,10 +2,10 @@
   <div class="company-logo"></div>
   <div class="stats">
     <div class="stats-one">
-      <div>Orders: {{totalOrderCount}}</div>
-      <div>En Route: {{enRouteCount}}</div>
-      <div>In Kitchen: {{inKitchenCount}}</div>
-      <div>Delivered: {{deliveredCount}}</div>
+      <div>Orders: {{totalOrderCount$ | async}}</div>
+      <div>En Route: {{enRouteCount$ | async}}</div>
+      <div>In Kitchen: {{inKitchenCount$ | async}}</div>
+      <div>Delivered: {{deliveredCount$ | async}}</div>
     </div>
   </div>
 </mat-toolbar>

@@ -19,7 +19,8 @@
       }
   ],
   "state" : 0,
-  "size": 2
+  "size": 2,
+  "driverId": 0
 },
 {
   "id": 2,
@@ -33,7 +34,8 @@
       }
   ],
   "state" : 0,
-  "size": 1
+  "size": 1,
+  "driverId": 0
 },
 {
   "id": 3,
@@ -55,8 +57,9 @@
           "id": 4
       }
   ],
-  "state" : 0,
-  "size": 3
+  "state" : 3,
+  "size": 3,
+  "driverId": 0
 },
 {
   "id": 4,
@@ -75,8 +78,9 @@
           "id": 2
       }
   ],
-  "state" : 0,
-  "size": 1
+  "state" : 5,
+  "size": 1,
+  "driverId": 2
 },
 {
   "id": 5,
@@ -98,6 +102,7 @@
           "id": 3
       }
   ],
-  "state" : 0,
-  "size": 3
+  "state" : 5,
+  "size": 2,
+  "driverId": 3
 }]
